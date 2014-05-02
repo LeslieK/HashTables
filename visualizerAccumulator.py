@@ -39,13 +39,11 @@ class VisualAnalyzer(object):
         axes.set_title(self.title)
         #axes.set_title("binary search tree")
         #axes.set_title("red-black tree: left and right rotations")
-        axes.plot(self.vals, linestyle='*', marker='.', color="black",
-                  markersize=1, label="values")
-        axes.plot(self.means, linestyle='-', color="red", linewidth=3,
-                  label="means")
+        axes.plot(self.vals, linestyle='*', marker='.', color="black", markersize=1, label="values")
+        axes.plot(self.means, linestyle='-', color="red", linewidth=3, label="means")
         #  1: upper right 2: upper left corner 3: lower-left 4: lower-right
         #  0: surprise!
-        axes.legend(loc=4)
+        axes.legend(loc=1)
 
 ##########################################
 
