@@ -96,10 +96,10 @@ class DoubleProbingHashST:
         i = self._hash(key)
         skip = self._hash2(key)
         while self.keys[i] is not None:
-            self.count += 1
+            #self.count += 1
             # 'equals' applies to strings, numbers
             if self.keys[i] == key and not self._isTombstone(i):
-                self.count += 1     
+                self.count += 1
                 # key already in table
                 self.values[i] = value  # update value
 
@@ -137,7 +137,7 @@ class DoubleProbingHashST:
         i = self._hash(key)
         skip = self._hash2(key)
         while self.keys[i] is not None:
-            self.count += 1
+            #self.count += 1
             if self.keys[i] == key and not self._isTombstone(i):
                 self.count += 1
                 # found key
@@ -210,13 +210,12 @@ def toStr(n):
     return new_string
 
 
-    
+
 
 
     n >> R
 
 
-     
 
 
 
@@ -227,4 +226,5 @@ def toStr(n):
 
 
 
-    
+
+
