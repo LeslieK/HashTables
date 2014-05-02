@@ -41,6 +41,11 @@ def bits(n):
 
 
 def hashFuncExp(a, M):
+    """
+    explore the distribution of bits as a result
+    of hashing a key using
+    different values for a and M
+    """
 
     def hfunc():
         def f(k):
